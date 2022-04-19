@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Snakes And Ladders</string>
+    <string name="welcome">Welcome to Snakes and Ladders!\nPress the button below to roll the dice.</string>
+    <string name="letsroll">Let\'s roll!</string>
+    <string name="quitGame">Quit game</string>
+    <string name="welcomeDialog">Each player will roll the dice.\nThe dice can roll a maximum of 12.
+\nWhatever square you land on may have a snake or a ladder.
+\n\nIf you are bit by a snake, you will move backwards, till you
+\nland on the square where it\'s tail is.
+\nIf you reach a ladder, you will move forwards, till you land
+\non the square where the ladder ends.
+\n\nAt any point, a player may choose to quit the game by clicking on the Quit game button</string>
+
+    <string name="colour_red">RED</string>
+    <string name="colour_blue">BLUE</string>
+    <string name="colour_green">GREEN</string>
+    <string name="colour_yellow">YELLOW</string>
+    <string name="computerInfo">Here we will show what the computer rolled</string>
+    <string name="rolling_dice">Rolling Dice!</string>
+    <string name="restartGame">Restart game</string>
+    <string-array name="player_colours">
+        <item>@string/colour_red</item>
+        <item>@string/colour_blue</item>
+        <item>@string/colour_yellow</item>
+        <item>@string/colour_green</item>
+    </string-array>
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/design_default_color_on_secondary"
+            android:text="@string/restartGame" />
+
+        <Button
+            android:id="@+id/quitButton"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/design_default_color_on_secondary"
+            android:text="@string/quitGame" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/gameboard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/console"
+        android:layout_below="@id/topBar"
+        android:background="@drawable/snakeladderboard"
+        android:weightSum="1"/>
+
+    <TextView
+        android:id="@+id/console"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_above="@id/consoleComputer"
+        android:focusable="false"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:text="@string/welcome" />
+
+    <TextView
+        android:id="@+id/consoleComputer"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_above="@id/rollDiceButton"
+        android:focusable="false"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:text="@string/computerInfo" />
+
+    <Button
+        android:id="@+id/rollDiceButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/design_default_color_on_secondary"
+        android:text="@string/letsroll"/>
+
+
+</android.widget.RelativeLayout>
